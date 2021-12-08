@@ -2,6 +2,7 @@ import React, { useContext, useState, useCallback, useEffect, useMemo} from "rea
 import UserProfile from "../components/UserProfile";
 import { ThemeContext } from "../context";
 import CONSTANTS from "../constants";
+import NameList from "../components/FuncNameList";
 const { THEMES } = CONSTANTS;
 
 function calcValue(n){
@@ -43,6 +44,7 @@ const HomePage = () => {
       <button onClick={handlerTheme}>switch</button>
       <button onClick={handlerLog}>log value</button>
       <UserProfile />
+      <NameList/>
     </div>
   );
 };
